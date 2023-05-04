@@ -40,3 +40,10 @@
     echo $bicicleta->getRuedas();
 
     echo "<hr>";
+    //instancia del segundo objeto
+    $auto = new Automovil(4,4,'manual');
+    //metodo heredado de transporte
+    echo $auto->getInfo();
+    //metodo  de clase automovil
+    echo $auto->getTransmision();
+    
