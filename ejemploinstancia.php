@@ -19,3 +19,9 @@
             echo "el producto es: " . $this->nombre . "y su precio es de: ". $this->precio;
         }
     }
+    //instancia de la clase en el primer objeto
+    $producto = new Producto('Tablet', 200, true);
+    //llamado al metodo mostrar producto, utlizando sintaxis de flecha ->
+    $producto ->mostrarProducto();
+
+
