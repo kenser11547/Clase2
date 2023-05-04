@@ -9,10 +9,13 @@
         public function _construct(string $nombre, int $precio, bool $disponible)
         {
             #se les da valor a los atributos con los parametros que recibe el metodo consturctor
-            $this -> nombre = $nombre;
-            $this -> precio = $precio;
-            $this -> disponible = $disponible;
+            $this->nombre = $nombre;
+            $this->precio = $precio;
+            $this->disponible = $disponible;
+        }
 
-
+        #definicion de metodos
+        public function mostrarProducto (){
+            echo "el producto es: " . $this->nombre . "y su precio es de: ". $this->precio;
         }
     }
