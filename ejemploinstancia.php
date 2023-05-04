@@ -24,4 +24,9 @@
     //llamado al metodo mostrar producto, utlizando sintaxis de flecha ->
     $producto ->mostrarProducto();
 
+    //impresion en pantalla del primer objeto
+    echo "<pre>";
+    var_dump($producto);
+    echo "</pre>";
+
 
