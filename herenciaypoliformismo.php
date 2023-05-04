@@ -17,7 +17,7 @@
     }
     class Bicicleta extends Transporte {
         public function getInfo() : string{
-            return "el transporte tiene " . $this->ruedas . "ruedas y una capacidad de" . $this->capacidad . "personas y no gasta gasolina"
+            return "el transporte tiene " . $this->ruedas . "ruedas y una capacidad de" . $this->capacidad . "personas y no gasta gasolina";
         }
     }
 
@@ -28,5 +28,8 @@
             $this->ruedas = $ruedas;
             $this->capacidad = $capacidad;
             $this->transmision = $transmision;
+        }
+        public function getTransmision() : string {
+            return $this->transmision;
         }
     }
