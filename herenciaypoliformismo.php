@@ -24,4 +24,9 @@
     class Automovil extends Transporte {
         protected string $transmision;
         public function __construct(int $ruedas, int $capacidad, string $transmision)
+        {
+            $this->ruedas = $ruedas;
+            $this->capacidad = $capacidad;
+            $this->transmision = $transmision;
+        }
     }
