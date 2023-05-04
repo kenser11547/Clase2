@@ -6,7 +6,7 @@
         public bool $disponible;
 
         #metodo constructor, se ejecuta al efectuar la instancia
-        public function _construct(string $nombre, int $precio, bool $disponible)
+        public function __construct(string $nombre, int $precio, bool $disponible)
         {
             #se les da valor a los atributos con los parametros que recibe el metodo consturctor
             $this->nombre = $nombre;
@@ -39,4 +39,4 @@
     var_dump($producto2);
     echo "</pre>";
 
-
+?>
