@@ -33,3 +33,10 @@
             return $this->transmision;
         }
     }
+    //instancia del primer objeto
+    $bicicleta = new Bicicleta(2,1);
+    //ejecucion del metodo heredado de transporte
+    echo $bicicleta->getInfo();
+    echo $bicicleta->getRuedas();
+
+    echo "<hr>";
