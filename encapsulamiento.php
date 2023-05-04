@@ -1,7 +1,7 @@
 <?php
-    class Producto{
+    class Producto {
         #definicion de atributos
-        public string $nombre;
+        protected string $nombre;
         public int $precio;
         public bool $disponible;
         #metodo contructor, se ejecuta al efectuar la intancia
@@ -14,7 +14,7 @@
         }
 
         //definicion de metodos
-        public function mostrarProducto(){
+        public function mostrarProducto() {
             echo "El producto es: " . $this->nombre . "y su precio es de: ". $this->precio;
         }
         //metodo getter para la propiedad protegida de nombre
@@ -27,3 +27,10 @@
         }
 
     }
+    $producto = new Producto('tablet', 200, true);
+   // $producto->mostrarProducto();
+    //echo $producto->nombre;//produce error
+    echo $producto->getNombre();//obtiene el nombre
+    $producto->setNombre('nuevo nombre');//setea el nombre
+    echo $producto->getNombre();//obtiene nombre
+    ?>
