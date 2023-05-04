@@ -13,4 +13,17 @@
              $this->disponible = $disponible;           
         }
 
+        //definicion de metodos
+        public function mostrarProducto(){
+            echo "El producto es: " . $this->nombre . "y su precio es de: ". $this->precio;
+        }
+        //metodo getter para la propiedad protegida de nombre
+        public function getNombre() : string {
+            return $this->nombre;
+        }
+        //metodo setter para propiedad protegida de nombre
+        public function setNombre(string $nombre){
+            $this->nombre = $nombre;
+        }
+
     }
