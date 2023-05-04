@@ -28,5 +28,15 @@
     echo "<pre>";
     var_dump($producto);
     echo "</pre>";
+    
+    //intancia de la clase del segundo objeto
+    $producto2 = new Producto('Monitor curvo', 300, true);
+    //llamado al metodo mostrar producto, usando sintaxis de flecha ->
+    $producto2->mostrarProducto();
+
+    //impresion del segundo producto
+    echo "<pre>";
+    var_dump($producto2);
+    echo "</pre>";
 
 
