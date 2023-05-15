@@ -1,11 +1,16 @@
 <?php
     class Transporte {
-        public $ruedas;
+        protected $ruedas;
         public $capacidad;
+        public static $colorv= "verde";
+
         public function __construct($ruedas, $capacidad)
         {
             $this->ruedas = $ruedas;
             $this->capacidad = $capacidad;
+        }
+        public static function getColor (){
+            echo "el transporte es de color" . self::$color;
         }
         public function getInfo() : void{
             echo "El transporte tiene " . $this->ruedas . "ruedas y una capacidad de " . $this->capacidad . " personas ";
@@ -38,38 +43,3 @@
     echo "<br>";
     $bicicletasTour = new bicicleta(2,1);
     $bicicletasTour->getInfo();
-
-
-
-/*
-    class Bicicleta extends Transporte {
-        public function getInfo() : string{
-            return "el transporte tiene " . $this->ruedas . "ruedas y una capacidad de" . $this->capacidad . "personas y no gasta gasolina";
-        }
-    }
-    class Automovil extends Transporte {
-        protected string $transmision;
-        public function __construct(int $ruedas, int $capacidad, string $transmision)
-        {
-            $this->ruedas = $ruedas;
-            $this->capacidad = $capacidad;
-            $this->transmision = $transmision;
-        }
-        public function getTransmision() : string {
-            return $this->transmision;
-        }
-    }
-    //instancia del primer objeto
-    $bicicleta = new Bicicleta(2,1);
-    //ejecucion del metodo heredado de transporte
-    echo $bicicleta->getInfo();
-    echo $bicicleta->getRuedas();
-
-    echo "<hr>";
-    //instancia del segundo objeto
-    $auto = new Automovil(4,4,'manual');
-    //metodo heredado de transporte
-    echo $auto->getInfo();
-    //metodo  de clase automovil
-    echo $auto->getTransmision();*/
-    
